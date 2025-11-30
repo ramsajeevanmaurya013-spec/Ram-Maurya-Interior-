@@ -155,28 +155,6 @@
             </div>
         </div>
     </section>
-    <!-- Feedback section -->
-<section id="feedback" style="padding:40px 20px; background:#f7f7f7;">
-  <h2 style="text-align:center; font-size:32px; margin-bottom:20px; color:#4a2c19; font-weight:bold;">
-    Customer Feedback
-  </h2>
-  <p style="text-align:center; margin-bottom:30px; font-size:18px;">
-    Please share your experience with Ram Maurya Interior
-  </p>
-
-  <div style="max-width:900px; margin:auto;">
-    <div style="position:relative; width:100%; height:0; padding-bottom:120%; overflow:hidden;">
-      <iframe 
-        src="https://docs.google.com/forms/d/e/1FAIpQLSeCEUDCxGaNdcsGmcIQ-TmpZKpWo9BuWqGSBpFndCp42H3Iqw/viewform?embedded=true"
-        frameborder="0"
-        marginheight="0"
-        marginwidth="0"
-        style="position:absolute; top:0; left:0; width:100%; height:100%; border:none;">
-      </iframe>
-    </div>
-  </div>
-</section>
-
 <!-- Contact section -->
 <section id="contact">
   <h2>Contact Us</h2>
@@ -211,21 +189,30 @@
         <form>
             <input type="text" placeholder="Your Name" required>
             <input type="email" placeholder="Your Email" required>
-            <textarea placeholder="Your Message" rows="5" required></textarea>
-            <button type="submit">Send Message</button>
-        </form>
-    </section>
-    
-    <footer>
-        <p>&copy; 2023 Ram Maurya Interior. All rights reserved.</p>
-    </footer>
-    
-    <script>
-        // Simple form submission alert (replace with actual backend)
-        document.querySelector('form').addEventListener('submit', function(e) {
-            e.preventDefault();
-            alert('Thank you for your message! We will get back to you soon.');
-        });
-    </script>
-</body>
+            <!-- Customer Feedback Section -->
+<section id="feedback" style="padding:40px 20px; background:#f7f7f7;">
+    <h2 style="text-align:center; font-size:32px; margin-bottom:20px; color:#4a2c19; font-weight:bold;">
+        Customer Feedback
+    </h2>
+
+    <p style="text-align:center; margin-bottom:30px; font-size:18px;">
+        Please share your experience with Ram Maurya Interior
+    </p>
+
+    <!-- Hide Google Sheet extra heading -->
+    <style>
+        iframe { border:none; }
+        iframe + * { display:none !important; }
+        .ritz .waffle a { display:none !important; }
+        .waffle > div:nth-child(1) { display:none !important; }
+    </style>
+    <div style="max-width:900px; margin:auto;">
+        <iframe 
+            src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQJzx0DL7uFXCPDZwc3j_PBc0Ig4-8E92SayCfnT7kUvATsYUDMVVJMNqw5i4x1O7o0a6_aANUyuJ6l/pubhtml?gid=1491764763&single=true"
+            width="100%" 
+            height="600px" 
+            style="border:none;">
+        </iframe>
+    </div>
+</section>
 </html>
